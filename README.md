@@ -9,6 +9,7 @@ $ npm install
 
 ### Run
 NOTE: Use node v8.1
+
 Make sure you change url, tokenId and tokenSecret variables first.
 ```
 $ npm start
