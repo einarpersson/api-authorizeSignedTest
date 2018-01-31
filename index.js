@@ -1,11 +1,10 @@
 const fetch = require('node-fetch')
 const crypto = require('crypto')
-
-const url = '<URL>'
-const tokenId = '<TOKENID>'
-const tokenSecret = '<TOKENSECRET>'
-
-
+const {
+    url,
+    tokenId,
+    tokenSecret
+} = require('./config')
 
 /******** FOR GET REQUEST  ********/
 const timestamp = new Date().toISOString()
