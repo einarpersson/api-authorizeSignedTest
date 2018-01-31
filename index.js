@@ -8,7 +8,7 @@ const {
 
 /******** FOR GET REQUEST  ********/
 const timestamp = new Date().toISOString()
-const urlToGet = `${url}/stats/calls/mostcommon?phonenumber=0707227024&noofPhonenumbers=5&tokenId=${tokenId}`
+const urlToGet = `${url}/stats/calls/mostcommon?phonenumber=<your phonenumber>&noofPhonenumbers=5&tokenId=${tokenId}`
 const signatureDataGet = urlToGet + ';' + timestamp
 
 const calculatedHashGet = crypto.createHmac('sha512', tokenSecret).update(signatureDataGet, 'utf8').digest('base64')
